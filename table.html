@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jsonData.js"></script>
+<script type="text/javascript" src="DrawTable.js"></script>
+<link href="boc.css" rel="stylesheet" type="text/css">
+<link href="Standard.css" rel="stylesheet" type="text/css">
+<link href="DataType.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function onint(){
+	var table=new drawTable(jsonObj).getHeadAndRes();
+	document.getElementById("cataContent").innerHTML=table;
+}
+</script>
+
+
+
+</head>
+<body onLoad="onint()">
+?<div id="cataContent"></div>
+</body>
+</html>

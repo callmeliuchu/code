@@ -1,0 +1,61 @@
+/*BOC-PARALLEL-004 Drew S*/
+.FLOAT_M, .AMT_M, .INT_M {
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: right;
+}
+.FLOAT_O, .AMT_O, .INT_O {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: right;
+}
+.FLOAT_P, .AMT_P, .INT_P {
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: right;
+}
+.TIME_M, .CHAR_M, .DATE_M, .SEARCH_M {
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: left;
+}
+.TIME_O, .CHAR_O, .DATE_O, .SEARCH_O {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: left;
+}
+.TIME_P, .CHAR_P, .DATE_P, .SEARCH_P {
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    left: 5px;
+    position: static;
+    text-align: left;
+}
+.DATE_O, .DATE_M {
+	/*BOC-PARALLEL-004 DREW ADD 2017-05-09 S*/
+    background: url("../Images/buttons/btn.png") no-repeat scroll -187px -351px;
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-09 E*/
+    cursor: default;
+    width: 110px;
+}
+/*BOC-PARALLEL-004 Drew S*/

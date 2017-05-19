@@ -1,0 +1,1025 @@
+/*BOC-PARALLEL-004 Drew S*/
+body {
+    color: #333;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.hd {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.hd h1 {
+    color: #00000000;
+    font-size: 14px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+p {
+    line-height: 1.6em;
+}
+.FldLabel {
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 5px 3px 2px;
+}
+.FldLabelTitle {
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 3px 5px 3px 2px;
+    white-space: nowrap;
+}
+.FldTitleSecd {
+    background-color: #e7e7e7;
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 13px;
+    padding: 3px 5px 3px 2px;
+    white-space: nowrap;
+}
+.FormForBOCNET {
+    color: #000000;
+    font-family: "MS Reference Sans Serif";
+    font-size: 12px;
+    padding: 3px 5px 3px 2px;
+    white-space: nowrap;
+}
+.FldLabelText {
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 190%;
+    padding: 3px 5px 3px 2px;
+    vertical-align: top;
+}
+#A_MENU {
+    width: 180px;
+}
+#InitialAccessDiv {
+    height: 350px;
+    text-align: center;
+    width: 100%;
+}
+#toolbar {
+    left: 980px;
+    position: absolute;
+    width: 230px;
+}
+#showLineFlag {
+    display: none;
+}
+.dialog {
+    color: #ffffff;
+    margin: 0 auto 0.5em 12px;
+    max-width: 3200px;
+    min-height: 400px;
+    min-width: 8em;
+    position: relative;
+    z-index: 1;
+}
+* .dialog {
+    height: 400px;
+}
+.dialog .content, .dialog .t, .dialog .b, .dialog .b div {
+}
+.dialog .content {
+    padding: 0;
+    position: relative;
+}
+.dialog .t {
+    background-position: left top;
+    height: 100%;
+    left: 0;
+    margin-left: -12px;
+    position: absolute;
+    top: 0;
+    width: 12px;
+}
+.dialog .b {
+    position: relative;
+    width: 100%;
+}
+.dialog .b, .dialog .b div {
+    font-size: 1px;
+    height: 30px;
+}
+.dialog .b {
+    background-position: right bottom;
+}
+.dialog .b div {
+    background-position: left bottom;
+    margin-left: -12px;
+    position: relative;
+    width: 12px;
+}
+.dialog .hd, .dialog .bd, .dialog .ft {
+    position: relative;
+}
+.dialog .wrapper {
+    max-height: 3200px;
+    overflow: auto;
+    position: static;
+}
+.dialog h1, .dialog p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+.dialog h1 {
+    padding-bottom: 0;
+}
+.dialog.type2 .content, .dialog.type2 .t, .dialog.type2 .b, .dialog.type2 .b div {
+    background-image: url("dialog2-dark-800x1200-alpha-drip.png");
+}
+.dialog.drip .b, .dialog.drip .b div {
+    height: 75px;
+}
+.dialog.drip {
+    margin-left: 65px;
+}
+.dialog.drip .t, .dialog.drip .b div, .dialog.drip .hd, .dialog.drip .bd, .dialog.drip .ft, .dialog.drip .wrapper {
+    margin-left: -65px;
+    width: 65px;
+}
+.dialog.drip .wrapper {
+    width: auto;
+}
+.dialog .wrapper .hd, .dialog .wrapper .bd, .dialog .wrapper .ft {
+    margin-left: 0;
+}
+.dialog.drip .hd, .dialog.drip .bd, .dialog.drip .ft {
+    padding: 0 2px 0 12px;
+    width: auto;
+}
+.Tab > table {
+    border-width: 0;
+    width: 100%;
+}
+table.tbMsgCate td, th {
+    margin: 0;
+    padding: 3px;
+}
+table.TB_MAINMENU {
+    background-color: #d4d5d6;
+    border: 0 none;
+    border-collapse: collapse;
+    margin: 2px;
+    text-align: left;
+}
+.Auth_ActivePrdName {
+    background-color: #d4d5d6;
+}
+.CalendarHeading, TH.General {
+    background-color: #c4d8e2;
+    color: #0054a0;
+    font-size: 11px;
+    line-height: 18px;
+}
+.CalendarNextMonth {
+    color: #a5bfaa;
+    cursor: pointer;
+    font-size: 11px;
+}
+.CalendarNonWorking {
+    background-color: #70193d;
+    color: #ffffff;
+    font-size: 11px;
+}
+.CalendarNonWorking {
+    background-color: #e5dbba;
+    color: #70193d;
+    font-size: 11px;
+}
+.CalendarToday {
+    background-color: #f7f8aa;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+.CalendarWeekend {
+    background-color: #ffffff;
+    color: #70193d;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+.CalendarWeekendPayments {
+    background-color: #ffffff;
+    color: #70193d;
+    font-size: 11px;
+    font-weight: bold;
+}
+.CalendarWorking {
+    color: #003366;
+    cursor: pointer;
+    font-size: 11px;
+}
+input.prim, input.prim_add, input.prim_approvals, input.prim_edit, input.prim_view_file, input.prim_refreshlist, input.prim_template, input.prim_update, input.prim_view_clause, input.prim_append, input.prim_previous, input.prim_select, input.prim_documents, input.prim_continue, input.prim_view_historical, input.prim_save, input.prim_next, input.prim_confirm, input.prim_create, input.prim_delete, input.prim_load_template, input.prim_reset, input.prim_print, input.prim_export, input.prim_savelist, input.prim_start, input.prim_stop, input.prim_userprofile, input.prim_send, input.prim_release, input.prim_refuse, input.sec_back, input.prim_view_rpt, input.prim_view_Curr_Image, input.prim_email, input.prim_close, input.prim_mixpay, input.sec_cancel {
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-09 S*/
+    background: url("../Images/buttons/btn.png") no-repeat scroll 100% -601px;
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-09 E*/
+    border: medium none;
+    display: inline-block;
+    height: 24px;
+    line-height: 22px;
+    padding-right: 15px;
+}
+.button_left {
+    background-image: url("../Images/buttons/btn.png");
+    background-position: 0 -576px;
+    background-repeat: no-repeat;
+    border-width: 0;
+    height: 22px;
+    line-height: 22px;
+    width: 2px;
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-09 S*/
+    display: none;
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-09 E*/
+}
+.button_right {
+    display: none;
+}
+.sec_back_boc {
+    color: #6d95e8;
+    font-family: SimSun,Arial,sans-serif;
+    font-size: 12px;
+}
+input.sec, input.ter_clause_off, input.ter_search_off, input.ter_filter_off, input.ter_reset_off, input.ter_go_off, input.ICO_UP, input.ICO_DOWN, input.ICO_LEFT, input.ICO_RIGHT {
+    background: transparent none repeat scroll 0 0;
+    border-style: none;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 70px;
+}
+.ICO_CALENDAR {
+    background: rgba(0, 0, 0, 0) url("../Images/buttons/btn.png") no-repeat scroll -278px -353px;
+    border: 0 none;
+    cursor: pointer;
+    height: 15px;
+    margin-left: 1px;
+    width: 18px;
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-03 S*/
+    display:none
+    /*BOC-PARALLEL-004 DREW ADD 2017-05-03 E*/
+}
+.ICO_LISTOPT {
+    background-image: url("/CEWeb/Images/sys_combo.gif");
+    background-repeat: no-repeat;
+    border-width: 0;
+    height: 11px;
+    width: 9px;
+}
+.ICO_HELPTIP {
+    background-image: url("/CEWeb/Images/icn_question.gif");
+    background-repeat: no-repeat;
+    border-width: 0;
+    height: 13px;
+    width: 12px;
+}
+table.tbHelpTip {
+    background-color: #000066;
+    border: 0 none;
+    width: 150px;
+}
+td.tdHelpTip {
+    color: #ffffff;
+    font-size: 12px;
+}
+.title {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+}
+.title_main {
+    background-color: #ffffff;
+    color: #f7941d;
+    font-size: 24px;
+    font-weight: bold;
+    height: 24px;
+}
+.title_second {
+    color: #f7941d;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 18px;
+}
+.title_top {
+    color: #666666;
+    cursor: pointer;
+    font-size: 11px;
+}
+table.tab {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td.tab {
+    border: 0 none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 22px;
+    padding: 6px;
+    text-align: center;
+}
+.TB_TRANCATA_001 {
+    border: 1px solid #ccc;
+    width: 90%;
+}
+table.TB_TRANCATA_002, table.tb_ingCUBK_title_001 {
+    background-color: transparent;
+    border-bottom: 1px solid #b7b7b7;
+    border-collapse: separate;
+    border-top: 1px solid #b7b7b7;
+    height: 20px;
+    width: 100%;
+}
+.TB_TRANCATA_002_002 {
+    background-color: transparent;
+    border-bottom: 1px solid #b7b7b7;
+    border-collapse: separate;
+    border-top: 1px solid #b7b7b7;
+    height: 20px;
+    width: 20%;
+}
+.FONT_GETTRANCATA_HEAD, .General_title, .TB_GETTRANCATA_HEAD, .td_ingCUBK_012, .InqCUBKKeyFldDesc {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #f6f6f6;
+    border-top: 1px solid #fff;
+    color: #777;
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+}
+.FONT_GETTRANCATA_HEAD font {
+    font-size: 12px;
+}
+.TR_GETTRANCATA {
+    text-align: left;
+}
+.TR_GETTRANCATA_TMPL {
+    background-color: #fff;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    color: #333;
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+    text-decoration: none;
+}
+.TD_GETTRANCATA_DOUBLE_TMPL {
+    background-color: #f1f6f9;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    color: #333;
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+    text-decoration: none;
+}
+.TD_GETTRANCATA_SINGLE_TMPL {
+    background-color: #fff;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    color: #333;
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+    text-decoration: none;
+}
+.TB_GETTRANCATA_HEAD_TMLL {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #f6f6f6;
+    border-top: 1px solid #fff;
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+}
+#tmplTable {
+    padding-bottom: 20px;
+}
+#tmplTable table.TB_TRANCATA_002 {
+    border-bottom: medium none;
+    border-top: medium none;
+}
+.TD_GETTRANCATA_SINGLE, .single_file {
+    background-color: #fff;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    color: #333;
+    padding: 3px;
+    text-decoration: none;
+}
+.TD_GETTRANCATA_DOUBLE, .double_file {
+    background-color: #f1f6f9;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    color: #333;
+    padding: 3px;
+    text-decoration: none;
+}
+.HID_TEXT_BORDER {
+    border: 0 none;
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
+    text-decoration: none;
+    z-index: 10;
+}
+.inbox_total {
+    font-size: 11px;
+    height: 20px;
+}
+.CHK_GETCRITERIA_1 {
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    padding-right: 4px;
+    text-align: right;
+}
+.BTN_GETBUTTONINFO_1 {
+    border-width: 0;
+    color: #ffffff;
+    font-size: 0;
+    height: 25px;
+    width: 98px;
+}
+.BTN_PAGINATION_1 {
+    font-size: 7pt;
+    height: 15px;
+    margin: 0;
+    padding: 0 0 10px;
+    white-space: nowrap;
+    width: 15px;
+}
+.CHK_GETCRITERIA_1 {
+    color: #0054a0;
+    font-size: 11px;
+    text-decoration: none;
+}
+.td_TrxTemplate_004, .td_TrxTemplate_006, .td_TrxTemplate_007, .td_TrxTemplate_008, .td_TrxTemplate_009 {
+    font-size: 12px;
+    padding-left: 3px;
+}
+table.ProdItem {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table.ProdItem td {
+    color: #000000;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 4px 10px;
+}
+table.ProdItem td#selectedSubMenu {
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table.ProdItem a.ProdLink:visited {
+    color: #000000;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-decoration: none;
+}
+table.ProdItem a.SelectedProdLink {
+    color: #f7941d;
+    font-weight: bold;
+    text-decoration: none;
+}
+table.FuncItem {
+    font-weight: normal;
+    width: 100%;
+}
+table.FuncItem td {
+    padding-bottom: 2px;
+    padding-left: 18px;
+    padding-top: 2px;
+}
+table.FuncItem td a.SelectedFuncLink {
+    color: #f7941d;
+    font-weight: normal;
+    text-decoration: none;
+}
+div.MsgToUser {
+    background-color: #fffee4;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 1px solid #ff0000;
+    margin: 2px;
+    padding: 5px 2px 2px;
+    width: 99%;
+}
+div.MsgToUser ul {
+    color: #ff0000;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 2px;
+    padding-top: 0;
+}
+div.MsgToUser li {
+    margin-left: 8px;
+}
+div.MsgToUser table tr td span.MsgToUserHeader {
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 0;
+    text-align: left;
+}
+div.MsgToUser span.MsgToUserHeader {
+    color: #ff0000;
+    font-size: 105%;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 2px;
+    text-align: left;
+}
+.MsgToUserMarker {
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.MsgToUserNote {
+    color: #ff0000;
+    padding-left: 33px;
+}
+td.PaginationCont {
+    text-align: center;
+}
+td.PaginationTable {
+    font-size: 14px;
+    text-align: center;
+}
+td.PaginationTable a {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+td.PaginationTable a.PaginationCurrLink {
+    background-color: #eaeaeb;
+}
+button.PaginationForward, button.PaginationBack {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+}
+div.notes {
+    margin-bottom: 10px;
+}
+div.notes table {
+    border: 1px solid #ffffff;
+    padding-top: 3px;
+}
+div.notes th {
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: left;
+}
+div.notes ul {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+div.notes li {
+    font-size: 12px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.HeadingBg {
+    background-color: #2e63b5;
+    border-top: 1px solid #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.3;
+    padding-left: 3px;
+    z-index: 10;
+}
+.LabelEmphasis {
+    font-size: 12px;
+}
+.HeaderCenter {
+    background-color: #b8a8c6;
+    color: #000000;
+    font-size: 15px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    text-align: center;
+}
+.MainHeading {
+    font-size: 20px;
+    font-weight: bold;
+}
+.SubHeading {
+    font-size: 15px;
+}
+.Auth_InActivePrdName, .Calendar {
+    background-color: #ffffff;
+}
+.TD_GETTRANCATA_SINGLE_hidden, .TD_GETTRANCATA_DOUBLE_hidden, .TD_GETTRANCATA_SINGLE_hidden, TD_GETTRANCATA_DOUBLE_hidden {
+    background-color: #ffffff;
+    color: #667580;
+    display: none;
+    font-size: 12px;
+    text-decoration: none;
+}
+.InqCUBKKeyFldOdd, .FONT_GETTRANCATA_CONTENT, .InqCUBKKeyFldEven {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 12px;
+}
+table.ProdItem a.ProdLink:hover, table.ProdItem a.ProdLink:link, table.ProdItem a.ProdLink:active {
+    color: #000000;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-decoration: none;
+}
+.Hide {
+    display: none;
+}
+.SEL_GETCRITERIA_1, .TXT_GETCRITERIA_1 {
+    display: block;
+}
+table.FuncItem a.FuncLink:visited, table.FuncItem a.FuncLink:link, table.FuncItem a.FuncLink:active, table.FuncItem a.FuncLink:hover, td.PaginationTable a.PaginationUnselectedLink:visited, td.PaginationTable a.PaginationUnselectedLink:link, td.PaginationTable a.PaginationUnselectedLink:active, td.PaginationTable a.PaginationUnselectedLink:hover {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+input.inbox_tab {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+}
+input.inbox_tab_on {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.UploadImageLink {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+#pathbar {
+    background: rgba(0, 0, 0, 0) url("../Images/boc_menu_bg.jsp") repeat scroll 0 0;
+    height: 20px;
+    width: 100%;
+}
+.home_table_border {
+    border-left: 4px solid #e7ebee;
+    border-top: 4px solid #e7ebee;
+    margin: 0;
+    width: 748px;
+}
+#home_left_all {
+    float: left;
+    height: 319px;
+    margin: 0;
+    padding: 0;
+    width: 358px;
+}
+#home_right_all {
+    float: left;
+    height: 318px;
+    margin: 0;
+    padding: 0;
+    width: 385px;
+}
+#home_left_one {
+    background-color: #9a907b;
+    color: #ffffff;
+    float: left;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    width: 358px;
+}
+#home_left_one h1 {
+    font-size: 12px;
+    height: 24px;
+    margin: 0;
+    padding: 6px 0 0;
+    text-align: left;
+    width: 358px;
+}
+#home_left_one h2 {
+    font-size: 12px;
+    font-weight: normal;
+    height: 26px;
+    margin: 0;
+    padding: 0 0 0 30px;
+    text-align: left;
+    vertical-align: top;
+    width: 328px;
+}
+#home_left_one h1 a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#home_left_two {
+    background: rgba(0, 0, 0, 0) url("../Images/COINS.jpg") no-repeat scroll 0 0;
+    clear: left;
+    color: #3f4754;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#home_center_one {
+    background-color: #e7ebee;
+    color: #284d83;
+    float: left;
+    height: 189px;
+    margin: 0;
+    padding: 0 15px;
+    width: 141px;
+}
+#home_center_one h1 {
+    font-size: 16px;
+    height: 17px;
+    margin: 0;
+    padding: 31px 0 0;
+    text-align: left;
+}
+#home_center_one h2 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 141px;
+}
+#home_center_one h1 a {
+    color: #284d83;
+    font-size: 12px;
+    text-decoration: none;
+}
+#home_right_one {
+    float: right;
+    height: 189px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 214px;
+}
+#home_center_two {
+    float: left;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    width: 171px;
+}
+#home_right_two {
+    float: right;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    width: 214px;
+}
+#home_left_two_1 {
+    height: 14px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 358px;
+}
+.home_left_two_2 {
+    float: left;
+    height: 116px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    width: 179px;
+}
+.home_left_two_2 h1 {
+    font-size: 13px;
+    height: 32px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 5px 0 20px;
+    text-align: left;
+    width: 154px;
+}
+.home_left_two_2 h1 img {
+    vertical-align: middle;
+}
+.home_left_two_2 h1 a {
+    color: #284d83;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.home_left_two_2 h1 a:hover {
+    color: #284d83;
+    font-weight: bold;
+    text-decoration: none;
+}
+.home_left_two_2 h2 {
+    font-size: 12px;
+    font-weight: normal;
+    height: 77px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 5px 0 20px;
+    text-align: left;
+    width: 154px;
+}
+.table_center td .table_center_in td.bgcolor {
+    background-color: #efeef3;
+    text-align: center;
+}
+.table_center_in {
+    width: 774px;
+}
+.table_center {
+    margin-top: 1px;
+    width: 100%;
+}
+.table_center td.bgcolor {
+    background-color: #efeef3;
+    text-align: center;
+}
+.label {
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 5px 3px 2px;
+}
+.amt {
+    color: #333;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    text-align: right;
+    text-decoration: none;
+    white-space: nowrap;
+}
+table.TB_TRANCATA_002_TEMP {
+    background-color: transparent;
+    width: 100%;
+    word-break: break-all;
+}
+.TB_IMLC_DOC {
+    background-color: transparent;
+    border-bottom: 1px solid #b7b7b7;
+    border-collapse: separate;
+    border-top: 1px solid #b7b7b7;
+    height: 40px;
+}
+.FONT_IMLC_DOC {
+    background-color: transparent;
+    border: 0 none;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.TD_IMLC_DOC {
+    background-color: #e7e7e7;
+    border-bottom: 1px solid #b7b7b7;
+    border-top: 1px solid #b7b7b7;
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
+    text-decoration: none;
+    width: 50%;
+    z-index: 10;
+}
+.TR_IMLC_DOC {
+    line-height: 30px;
+}
+.FONT_IMLC_DOC_VIEW:link {
+    color: rgb(247, 148, 29);
+    font-weight: bold;
+    text-decoration: none;
+}
+.FONT_IMLC_DOC_VIEW:active {
+    color: rgb(247, 148, 29);
+    font-weight: bold;
+    text-decoration: none;
+}
+.FONT_IMLC_DOC_VIEW:hover {
+    color: rgb(247, 148, 29);
+    font-weight: bold;
+    text-decoration: none;
+}
+.FONT_IMLC_DOC_VIEW:visited {
+    color: rgb(247, 148, 29);
+    font-weight: bold;
+    text-decoration: none;
+}
+.SCFTitle {
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.SCFFldLabel {
+    color: #000000;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 5px 3px 30px;
+}
+.SCFGrid {
+    padding: 3px;
+}
+.SCFcriteria_body {
+    background-color: #f3f3fb;
+    color: #2f2f2f;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 0;
+}
+.ListLabel {
+    color: #999;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 5px 3px 2px;
+    text-align: left;
+}
+.bodySum {
+    color: #000000;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+}
+.FONT_GETTRANCATA_CONTENT_F {
+    background-color: transparent;
+    border: 0 none;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+.TD_GETTRANCATA_SINGLE_FST {
+    background-color: #fff;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px solid #fff;
+    color: #333;
+    padding: 3px;
+    text-decoration: none;
+}
+.TD_GETTRANCATA_DOUBLE_FST {
+    background-color: #f1f6f9;
+    border-bottom: 1px dotted #ccc;
+    border-left: 1px solid #fff;
+    color: #333;
+    padding: 3px;
+    text-decoration: none;
+}
+.icon-tb {
+    background: rgba(0, 0, 0, 0) url("../Images/icon.png") no-repeat scroll -240px -26px;
+    display: block;
+    height: 9px;
+    width: 17px;
+}
+/*BOC-PARALLEL-004 Drew E*/
